@@ -13,10 +13,10 @@
 
 # Complexity
 **- Time complexity : O(N)**
-where N is the number of nodes in the linked list, as each node is visited once.
+Only one traversal of the loop is needed.
 
-**- Space complexity : O(1)**
-because the algorithm uses a constant amount of additional space regardless of the size of the input.
+**- Space complexity : O(N)**
+where N is the space required to store the value in the hashmap
 
 # Code
 ```
