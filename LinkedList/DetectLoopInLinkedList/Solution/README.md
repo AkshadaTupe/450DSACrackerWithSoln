@@ -13,9 +13,11 @@
 
 # Complexity
 **- Time complexity : O(N)**
-Only one traversal of the loop is needed.
+
+Only one traversal of the loop is needed
 
 **- Space complexity : O(N)**
+
 where N is the space required to store the value in the hashmap
 
 # Code
