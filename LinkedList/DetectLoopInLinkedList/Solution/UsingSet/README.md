@@ -1,22 +1,24 @@
 # Approach
-Create an empty unordered set (s) to store visited nodes.
+- Create an empty unordered set (s) to store visited nodes.
 
-Iterate through the linked list using a while loop. In each iteration:
+- Iterate through the linked list using a while loop. In each iteration:
 
-Check if the current node (head) is already in the set s. If it is, then a loop is detected, and the function returns true.
+- Check if the current node (head) is already in the set s. If it is, then a loop is detected, and the function returns true.
 
-If the current node is not in the set, insert it into the set.
+- If the current node is not in the set, insert it into the set.
 
-Move the head pointer to the next node.
+- Move the head pointer to the next node.
 
-If the end of the linked list is reached (i.e., head becomes NULL), return false as there is no loop.
+- If the end of the linked list is reached (i.e., head becomes NULL), return false as there is no loop.
 
 # Complexity
 **- Time complexity : O(N)**
-where N is the number of nodes in the linked list, as each node is visited once.
+
+Only one traversal of the loop is needed
 
 **- Space complexity : O(N)**
-N is the space required to store the value in the Set.
+
+where N is the space required to store the value in the hashmap
 
 # Code
 ```
@@ -29,27 +31,21 @@ struct Node
 class Solution
 {
     public:
-    //Function to reverse a linked list.
-    struct Node* reverseList(struct Node *head)
+    //Function to check if the linked list has a loop.
+    bool detectLoop(Node* head)
     {
-       if (head == NULL || head->next == NULL)
-        return head;
-        
-        Node* reverseLinkedList = NULL;
+       unordered_set<Node*> s;
         
         while(head != NULL)
         {
-            Node* tempList = head->next;
+            if (s.find(head) != s.end())
+                return true;
             
-            head->next = reverseLinkedList;
+            s.insert(head);
             
-            reverseLinkedList = head;
-            
-            head = tempList;
+            head = head->next;
         }
-        
-        return reverseLinkedList;
+        return false;
     }
-    
 };
 ```
