@@ -1,16 +1,16 @@
 # Approach
-Here we are going to use Hare Tortoise Algorithm 
+Here we are going to use **Hare Tortoise Algorithm** 
 
-Initialization:
+**Initialization:**
 
-Initialize two pointers, slow and fast, to the head of the linked list.
+Initialize two pointers, **slow** and **fast**, to the **head** of the linked list.
 
 Loop Detection:
 Use a while loop to traverse the linked list.
-In each iteration, move the slow pointer one step and the fast pointer two steps.
+In each iteration, move the **slow** pointer one step and the **fast** pointer two steps.
 
 Check for Loop:
-Inside the loop, check if the slow pointer is equal to the fast pointer. If they are equal, it indicates a loop in the linked list.
+Inside the loop, check if the **slow** pointer is equal to the **fast** pointer. If they are equal, it indicates a loop in the linked list.
 
 If the loop exits without finding any matching pointers, return false, indicating that there is no loop in the linked list.
 
