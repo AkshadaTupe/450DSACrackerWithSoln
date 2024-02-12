@@ -1,10 +1,10 @@
 # Approach
 
-Dummy Node Creation
+**Dummy Node Creation**
 
 - A dummy node is created and set as the next of the dummy node to the head of the linked list. This is done to handle the case where the loop is present at the beginning of the linked list, making it easier to detect the loop.
 
-Unordered Set
+**Unordered Set**
 
 - An unordered_set named map is created to store the nodes as they are traversed. The set is used to keep track of the nodes encountered during the traversal.
 
