@@ -1,5 +1,5 @@
 # Approach
-Here we are going to use **Hare Tortoise Algorithm / Floyd's Cycle Detection Algorithm ** 
+Here we are going to use **Hare Tortoise Algorithm / Floyd's Cycle Detection Algorithm** 
 
 **Loop Detection:**
 
@@ -15,12 +15,13 @@ Here we are going to use **Hare Tortoise Algorithm / Floyd's Cycle Detection Alg
 
 **Removing the Loop:**
 
-- If a loop is detected , the slow pointer is reset to the head of the linked list.
+- If a loop is detected , the **slow** pointer is reset to the **head** of the linked list.
 
-- **Special case** : If slow and fast meet at the head itself, it means the loop starts from the head. In this case, fast is moved to the last node of the loop.
-Otherwise, both pointers move one step at a time until they meet again. This meeting point is the start of the loop.
+- **Special case** : If **slow** and **fast** meet at the **head** itself, it means the loop starts from the **head**. In this case, **fast** is moved to the last node of the loop.
 
-Finally, the loop is broken by setting fast->next to NULL.
+- Otherwise, both pointers move one step at a time until they meet again. This meeting point is the start of the loop.
+
+Finally, the loop is broken by setting **fast->next** to NULL.
 
 # Reference
 
