@@ -24,9 +24,9 @@ Explanation: The link list looks like
 
 1 -> 3 -> 4
 
-     ^    |
+       ^    |
 
-     |____|    
+       |____|    
 
 A loop is present. If you remove it 
 successfully, the answer will be 1. 
