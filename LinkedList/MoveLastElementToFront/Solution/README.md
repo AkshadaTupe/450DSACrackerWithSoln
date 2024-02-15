@@ -15,11 +15,11 @@ The code uses a while loop to iterate through the linked list until **ptr** reac
 
 **After Iteartion**
 
-- One New pointer temp is created to store last element of linked list 
+- One New pointer **temp** is created to store last element of linked list 
 
 - After that second last element next node is made NULL
 
-- And temp->next node will be pointed to head 
+- And **temp->next** node will be pointed to head 
 
 - Finally return the temp
 
