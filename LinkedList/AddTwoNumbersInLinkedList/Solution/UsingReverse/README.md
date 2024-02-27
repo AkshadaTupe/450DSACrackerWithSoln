@@ -1,48 +1,48 @@
 # Approach
 
-Reverse the Input Lists:
+**Reverse the Input Lists:**
 
 firstRev = reverseList(first); reverses the first linked list.
 
 secondRev = reverseList(second); reverses the second linked list.
 
-Perform Addition:
+**Perform Addition:**
 
 addList = performAddition(firstRev, secondRev); performs addition on the reversed linked lists using the performAddition function.
 
-Addition Algorithm (performAddition):
+**Addition Algorithm (performAddition):**
 
-Initialize a dummy node to 0 (dummy).
+- Initialize a dummy node to 0 (dummy).
 
-Initialize a temporary dummy pointer (tmpDummy) to the dummy node.
+- Initialize a temporary dummy pointer (tmpDummy) to the dummy node.
 
-Initialize sum and carry to 0.
+- Initialize sum and carry to 0.
 
-Loop until both linked lists and carry are exhausted.
+- Loop until both linked lists and carry are exhausted.
 
-In each iteration, calculate the sum of corresponding digits from both linked lists and the carry.
+- In each iteration, calculate the sum of corresponding digits from both linked lists and the carry.
 
-Create a new node with the unit digit of the sum and update the carry for the next iteration.
+- Create a new node with the unit digit of the sum and update the carry for the next iteration.
 
-Connect the new node to the result linked list.
+- Connect the new node to the result linked list.
 
-Move the temporary dummy pointer to the new node.
+- Move the temporary dummy pointer to the new node.
 
-Continue the loop until both input lists and carry are processed.
+- Continue the loop until both input lists and carry are processed.
 
-Return the Result:
+**Return the Result:**
 
 return reverseList(addList); reverses the result linked list before returning it.
 
-Here's a summary of the logic:
+**Here's a summary of the logic:**
 
-Reverse both input linked lists.
+- Reverse both input linked lists.
 
-Perform addition on the reversed linked lists, digit by digit, considering any carry.
+- Perform addition on the reversed linked lists, digit by digit, considering any carry.
 
-Create a new linked list to store the result.
+- Create a new linked list to store the result.
 
-Reverse the result linked list before returning.
+- Reverse the result linked list before returning.
 
 # Complexity
 **- Time complexity : : O(N+M)**
